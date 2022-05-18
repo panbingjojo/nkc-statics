@@ -1,13 +1,14 @@
-const PATH = require('path');
 import {broker} from './modules/communication';
-import ApiService from 'moleculer-web';
+import Configs from './modules/configs';
+// import ApiService from 'moleculer-web';
 import {InfoLog} from './modules/logger';
 
 broker.createService({
   name: 'NKC-STATICS-SERVICE',
-  mixins: [ApiService],
   settings: {
-    folder: PATH.join(__dirname, ''),
+    port: Configs.port,
+    path: 'statics',
+    folder: Configs.path,
     options: {},
   }
 });

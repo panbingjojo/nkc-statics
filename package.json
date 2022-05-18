@@ -1,5 +1,5 @@
 {
-  "name": "nkc-account",
+  "name": "nkc-statics",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -32,7 +32,10 @@
     "@types/jest": "^27.5.1",
     "jest": "^28.1.0",
     "moleculer": "^0.14.21",
-    "moleculer-web": "^0.10.4"
+    "moleculer-web": "^0.10.4",
+    "mongoose": "^6.3.3",
+    "jsonwebtoken": "^8.5.1",
+    "yaml": "^2.1.0"
   },
   "jest": {
     "verbose": true,
